@@ -5,7 +5,7 @@ function Project() {
     <article>
       <div>
         <h3>Project</h3>
-        <p>Project description</p> 
+        <p>Project description</p>
       </div>
     </article>
   )

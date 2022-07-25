@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Nav() {
+function Nav(props) {
+  const {
+    tab = [],
+    setCurrentTab,
+    currentTab
+  } = props;
+
+  useEffect(() => {
+    document.title = currentTab
+  }, [currentTab])
 
   return (
     <header className='flex-row px-1 hero'>
@@ -12,22 +21,22 @@ function Nav() {
       <nav class="link-list">
         <ul>
           <li>
-            <a data-testid="about" href="#about">
+            <a data-testid="about" href="#about" onClick={() => setCurrentTab(tab[0])}>
               About Me
             </a>
           </li>
           <li>
-            <a data-testid="portfolio" href="#portfolio">
+            <a data-testid="portfolio" href="#portfolio" onClick={() => setCurrentTab(tab[1])}>
               Portfolio
             </a>
           </li>
           <li>
-            <a data-testid="contact" href="#contact">
+            <a data-testid="contact" href="#contact" onClick={() => setCurrentTab(tab[2])}>
               Contact
             </a>
           </li>
           <li>
-            <a data-testid="Resume" href="#resume">
+            <a data-testid="Resume" href="#resume" onClick={() => setCurrentTab(tab[3])}>
               Resume
             </a>
           </li>

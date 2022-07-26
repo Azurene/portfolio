@@ -52,17 +52,10 @@ nav {
   padding: 10px 100px;
 }
 
-/* TL;DR Segment Links Styling */
-
 section {
   margin: 20px;
 }
 
-
-/* Social Media Styling Start */
-
-
-/* Social Media Styling End */
 a {
   text-decoration: none;
   color: var(--secondary-text);

@@ -21,22 +21,22 @@ function Nav(props) {
       <nav class="link-list">
         <ul>
           <li>
-            <a data-testid="about" href="#about" onClick={() => setCurrentTab(tab[0])}>
+            <a className="btn btn-outline-light" data-testid="about" href="#about" onClick={() => setCurrentTab(tab[0])}>
               About Me
             </a>
           </li>
           <li>
-            <a data-testid="portfolio" href="#portfolio" onClick={() => setCurrentTab(tab[1])}>
+            <a className="btn btn-outline-light" data-testid="portfolio" href="#portfolio" onClick={() => setCurrentTab(tab[1])}>
               Portfolio
             </a>
           </li>
           <li>
-            <a data-testid="contact" href="#contact" onClick={() => setCurrentTab(tab[2])}>
+            <a className="btn btn-outline-light" data-testid="contact" href="#contact" onClick={() => setCurrentTab(tab[2])}>
               Contact
             </a>
           </li>
           <li>
-            <a data-testid="Resume" href="#resume" onClick={() => setCurrentTab(tab[3])}>
+            <a className="btn btn-outline-light" data-testid="Resume" href="#resume" onClick={() => setCurrentTab(tab[3])}>
               Resume
             </a>
           </li>

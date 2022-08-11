@@ -18,7 +18,7 @@ function Nav(props) {
           Jodee Ann Conui
         </a>
       </h2>
-      <nav class="link-list">
+      <nav className="link-list">
         <ul>
           <li>
             <a className="btn btn-outline-light" data-testid="about" href="#about" onClick={() => setCurrentTab(tab[0])}>

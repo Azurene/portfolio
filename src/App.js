@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 // import components
@@ -13,29 +14,32 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 function App() {
-  const [tab] = useState([
-    "About",
-    "Portfolio",
-    "Contact",
-    "Resume"
-  ])
-
-  const [currentTab, setCurrentTab] = useState(tab[0]);
-
   return (
     <div>
-      <Nav
-        tab={tab}
-        currentTab={currentTab}
-        setCurrentTab={setCurrentTab}
-      ></Nav>
-      <main>
-        {currentTab === "About" && <About></About>}
-        {currentTab === "Portfolio" && <Portfolio></Portfolio>}
-        {currentTab === "Contact" && <Contact></Contact>}
-        {currentTab === "Resume" && <Resume></Resume>}
-      </main>
-      <Footer></Footer>
+      <Router>
+        <Nav />
+        <main>
+          <Routes>
+            <Route
+              path="/"
+              element={<About />}
+            />
+            <Route
+              path='/portfolio'
+              element={<Portfolio />}
+            />
+            <Route
+              path='/contact'
+              element={<Contact />}
+            />
+            <Route
+              path='/resume'
+              element={<Resume />}
+            />
+          </Routes>
+        </main>
+      </Router>
+      <Footer />
     </div>
   );
 }

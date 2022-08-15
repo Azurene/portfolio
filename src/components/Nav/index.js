@@ -1,15 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Nav(props) {
-  const {
-    tab = [],
-    setCurrentTab,
-    currentTab
-  } = props;
-
-  useEffect(() => {
-    document.title = currentTab
-  }, [currentTab])
+function Nav() {
 
   return (
     <header className='flex-row px-1 hero'>
@@ -20,25 +12,25 @@ function Nav(props) {
       </h2>
       <nav className="link-list">
         <ul>
-          <li>
-            <a className="btn btn-outline-light" data-testid="about" href="#about" onClick={() => setCurrentTab(tab[0])}>
+          <li className="btn btn-outline-light">
+            <Link to='/'>
               About Me
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="btn btn-outline-light" data-testid="portfolio" href="#portfolio" onClick={() => setCurrentTab(tab[1])}>
+            <Link to='/portfolio' className="btn btn-outline-light">
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="btn btn-outline-light" data-testid="contact" href="#contact" onClick={() => setCurrentTab(tab[2])}>
+            <Link to='/contact' className="btn btn-outline-light">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="btn btn-outline-light" data-testid="Resume" href="#resume" onClick={() => setCurrentTab(tab[3])}>
+            <Link to='/resume' className="btn btn-outline-light">
               Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -77,23 +77,20 @@ function App() {
         <Nav />
         <main>
           <Routes>
-            <Route path='/'
+            <Route
+              path="/"
               element={<About />}
             />
             <Route
-              path="/portfolio"
-              element={<About />}
-            />
-            <Route
-              path='/portfolio/portfolio'
+              path='/portfolio'
               element={<Portfolio />}
             />
             <Route
-              path='/portfolio/contact'
+              path='/contact'
               element={<Contact />}
             />
             <Route
-              path='/portfolio/resume'
+              path='/resume'
               element={<Resume />}
             />
           </Routes>

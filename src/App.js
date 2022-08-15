@@ -93,7 +93,7 @@ function App() {
               element={<Contact />}
             />
             <Route
-              path='/porfolio/resume'
+              path='/portfolio/resume'
               element={<Resume />}
             />
           </Routes>

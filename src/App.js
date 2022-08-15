@@ -77,6 +77,9 @@ function App() {
         <Nav />
         <main>
           <Routes>
+            <Route path='/'
+              element={<About />}
+            />
             <Route
               path="/portfolio"
               element={<About />}

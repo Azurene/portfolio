@@ -6,9 +6,7 @@ function Nav() {
   return (
     <header className='flex-row px-1 hero'>
       <h2 className="display-5 text-center text-break">
-        <a data-testid="link" href="/">
           Jodee Ann Conui
-        </a>
       </h2>
       <nav className="link-list">
         <ul>

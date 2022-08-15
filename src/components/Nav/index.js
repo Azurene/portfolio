@@ -16,17 +16,17 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to='/portfolio/portfolio' className="btn btn-outline-light">
+            <Link to='/portfolio' className="btn btn-outline-light">
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to='/portfolio/contact' className="btn btn-outline-light">
+            <Link to='/contact' className="btn btn-outline-light">
               Contact
             </Link>
           </li>
           <li>
-            <Link to='/portfolio/resume' className="btn btn-outline-light">
+            <Link to='/resume' className="btn btn-outline-light">
               Resume
             </Link>
           </li>

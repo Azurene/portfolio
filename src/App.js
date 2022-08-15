@@ -78,19 +78,19 @@ function App() {
         <main>
           <Routes>
             <Route
-              path="/"
+              path="/portfolio"
               element={<About />}
             />
             <Route
-              path='/portfolio'
+              path='/portfolio/portfolio'
               element={<Portfolio />}
             />
             <Route
-              path='/contact'
+              path='/portfolio/contact'
               element={<Contact />}
             />
             <Route
-              path='/resume'
+              path='/porfolio/resume'
               element={<Resume />}
             />
           </Routes>

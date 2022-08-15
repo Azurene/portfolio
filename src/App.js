@@ -20,20 +20,23 @@ function App() {
         <Nav />
         <main>
           <Routes>
-            <Route
-              path="/"
+            <Route path='/'
               element={<About />}
             />
             <Route
-              path='/portfolio'
+              path="/portfolio"
+              element={<About />}
+            />
+            <Route
+              path='/portfolio/portfolio'
               element={<Portfolio />}
             />
             <Route
-              path='/contact'
+              path='/portfolio/contact'
               element={<Contact />}
             />
             <Route
-              path='/resume'
+              path='/portfolio/resume'
               element={<Resume />}
             />
           </Routes>

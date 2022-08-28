@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Project(props) {
+const Project = (props) => {
   return (
       <div className='card col-6'>
         <img className="card-img-top" src={props.imageLink} alt="" />

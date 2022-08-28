@@ -34,27 +34,15 @@ const Portfolio = () => {
         <p>Examples of some projects that I've worked on:</p>
       </div>
       <div className="row">
-        <Project
-          title={projectList[0].title}
-          github={projectList[0].github}
-          live={projectList[0].live}
-          imageLink={projectList[0].imageLink}
-          description={projectList[0].description}
-        />
-        <Project
-          title={projectList[1].title}
-          github={projectList[1].github}
-          live={projectList[1].live}
-          imageLink={projectList[1].imageLink}
-          description={projectList[1].description}
-        />
-        <Project
-          title={projectList[2].title}
-          github={projectList[2].github}
-          live={projectList[2].live}
-          imageLink={projectList[2].imageLink}
-          description={projectList[2].description}
-        />
+        {projectList.map(project => (
+          <Project
+            title={project.title}
+            github={project.github}
+            live={project.live}
+            imageLink={project.imageLink}
+            description={project.description}
+          />
+        ))}
       </div>
     </section>
   )

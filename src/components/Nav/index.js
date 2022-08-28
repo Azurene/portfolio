@@ -11,7 +11,7 @@ const Nav = () => {
       <nav className="link-list">
         <ul>
           <li className="btn btn-outline-light">
-            <Link to='/portfolio'>
+            <Link to='/'>
               About Me
             </Link>
           </li>

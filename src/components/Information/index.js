@@ -4,16 +4,10 @@ const Information = (props) => {
 
   return (
     <article className='container'>
-      <h3>Information</h3>
-      <h4>Location</h4>
-      <ul>
-        <li>
-          Item
-        </li>
-        <li>
-          Item
-        </li>
-      </ul>
+      <p>{props.title}</p>
+      <p>{props.company}</p>
+      <p>{props.time}</p>
+      <p>{props.location}</p>
     </article>
   )
 }

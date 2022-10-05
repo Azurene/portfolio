@@ -8,6 +8,7 @@ const Nav = () => {
       <h2 className="display-5 text-center text-break">
           Jodee Ann Conui
       </h2>
+      <p className='text-center text-break'>WARNING: This website is a work in progress, some functionality may not yet be present.</p>
       <nav className="link-list">
         <ul>
           <li className="btn btn-outline-light">

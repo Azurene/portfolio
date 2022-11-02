@@ -11,8 +11,8 @@ const Nav = () => {
       <p className='text-center text-break'>WARNING: This website is a work in progress, some functionality may not yet be present.</p>
       <nav className="link-list">
         <ul>
-          <li className="btn btn-outline-light">
-            <Link to='/'>
+          <li>
+            <Link to='/' className="btn btn-outline-light">
               About Me
             </Link>
           </li>

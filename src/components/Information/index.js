@@ -4,10 +4,12 @@ const Information = (props) => {
 
   return (
     <article className='container'>
-      <p>{props.title}</p>
-      <p>{props.company}</p>
-      <p>{props.time}</p>
-      <p>{props.location}</p>
+      <div className='row'>
+        <p className='col'>{props.title}</p>
+        <p className='col'>{props.company}</p>
+        <p className='col'>{props.time}</p>
+        <p className='col'>{props.location}</p>
+      </div>
     </article>
   )
 }

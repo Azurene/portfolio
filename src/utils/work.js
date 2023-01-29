@@ -1,6 +1,18 @@
 const work = [
   {
-    jobTitle: "Community Service Assistant",
+    jobTitle: "Student Fellow",
+    company: "Autonomy Research Center for STEAHM",
+    time: "January 2023 - current",
+    location: "Northridge, Los Angeles, CA"
+  },
+  {
+    jobTitle: "Senior Fellow",
+    company: "Community for Achievement in Psychological Science",
+    time: "February 2023 - current",
+    location: "Northridge, Los Angeles, CA"
+  },
+  {
+    jobTitle: "Community Service Assistant - Senior Advisor",
     company: "CSUN Department of Police Services",
     time: "September 2022 - current",
     location: "Northridge, Los Angeles, CA"

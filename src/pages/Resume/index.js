@@ -2,7 +2,7 @@ import React from 'react';
 import Information from '../../components/Information';
 import work from '../../utils/work';
 import education from '../../utils/education';
-
+import skill from '../../utils/skill';
 function Resume() {
 
   return (
@@ -26,8 +26,15 @@ function Resume() {
             location={work.location}
           />
         ))}
-        <h3>Skills</h3>
-        <Information />
+        <h3>Skills and Certifications</h3>
+        {skill.map(skill => (
+          <Information
+            title={skill.skillName}
+            time={skill.time}
+            location={skill.location}
+            description={skill.description}
+          />
+        ))}
       </div>
     </section>
   )

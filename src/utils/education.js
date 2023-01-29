@@ -1,5 +1,10 @@
 const education = [
   {
+    location: "California State University, Northridge",
+    title: "B.A. Psychology",
+    time: "Anticipated 2024"
+  },
+  {
     location: "Moorpark College",
     title: "A.A.-T Psychology",
     time: "2022"

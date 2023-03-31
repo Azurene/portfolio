@@ -3,6 +3,7 @@ import Information from '../../components/Information';
 import work from '../../utils/work';
 import education from '../../utils/education';
 import skill from '../../utils/skill';
+import awards from '../../utils/awards';
 function Resume() {
 
   return (
@@ -33,6 +34,15 @@ function Resume() {
             time={skill.time}
             location={skill.location}
             description={skill.description}
+          />
+        ))}
+        <h3>Awards and Grants</h3>
+        {awards.map(award => (
+          <Information
+            title={award.awardName}
+            location={award.organization}
+            time={award.date}
+            description={award.amount}
           />
         ))}
       </div>

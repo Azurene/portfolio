@@ -6,7 +6,7 @@ const Project = (props) => {
       <div className='h3 col-3'>{props.title}
         <img className='col img-thumbnail project-image' src={props.imageLink} alt="" />
       </div>
-      <div className='h3 col'>description
+      <div className='h3 col'>Description
         <p className='col h6'>{props.description}</p>
       <div className='link-list'>
         <ul>

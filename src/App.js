@@ -17,7 +17,7 @@ import Footer from './components/Footer';
 // import pages
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 const httpLink = createHttpLink({
@@ -57,12 +57,12 @@ function App() {
                 path='/portfolio'
                 element={<Portfolio />}
               />
-              <Route
+              {/* <Route
                 path='/contact'
                 element={<Contact />}
-              />
+              /> */}
               <Route
-                path='/resume'
+                path='/cv'
                 element={<Resume />}
               />
             </Routes>

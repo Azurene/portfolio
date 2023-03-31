@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.project-image {
+  width: 12em;
+  height: 6em;
+  object-fit: cover;
+}

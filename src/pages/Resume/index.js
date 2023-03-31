@@ -8,7 +8,7 @@ function Resume() {
   return (
     <section className='container'>
       <div>
-        <h2>Resume</h2>
+        <h2>Curriculum Vitae</h2>
         <h3>Education</h3>
         {education.map(education => (
           <Information
@@ -17,7 +17,7 @@ function Resume() {
             location={education.location}
           />
         ))}
-        <h3>Work Experience</h3>
+        <h3>Experience</h3>
         {work.map(work => (
           <Information
             title={work.jobTitle}

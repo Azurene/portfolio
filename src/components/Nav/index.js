@@ -17,20 +17,20 @@ const Nav = () => {
             </Link>
           </li>
           <li>
+            <Link to='/cv' className="btn btn-outline-light">
+            Curriculum Vitae
+            </Link>
+          </li>
+          <li>
             <Link to='/portfolio' className="btn btn-outline-light">
               Portfolio
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/contact' className="btn btn-outline-light">
               Contact
             </Link>
-          </li>
-          <li>
-            <Link to='/resume' className="btn btn-outline-light">
-              Resume
-            </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
